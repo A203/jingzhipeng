@@ -1,8 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/exp">
+    android:background="@drawable/exp02">
 
     <TextView android:text="体重指数计算器"
         android:layout_width="match_parent"
@@ -13,51 +15,121 @@
         android:textColor="#000000"
         android:gravity="center"/>
 
-    <TextView android:text="身高"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:paddingTop="30sp"
-        android:textColor="#000000" />
+        android:orientation="horizontal"
+        android:layout_marginLeft="65sp">
 
-    <EditText
+        <TextView android:text="身高"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:singleLine="true"
-        android:ems="4"
-        android:inputType="numberDecimal"/>
-
-    <TextView android:text="体重"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:paddingTop="30sp"
         android:textColor="#000000"/>
-    <EditText
+
+        <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:singleLine="true"
-        android:ems="4"
-        android:inputType="numberDecimal"/>
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:id="@+id/ET1"
+            android:background="@drawable/tv_border"
+            android:layout_marginLeft="9sp"
+            android:layout_marginRight="9sp"
+            android:gravity="center"/>
 
+        <TextView android:text="cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:paddingTop="30sp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="67sp">
+
+        <TextView android:text="体重"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:paddingTop="25sp"
+        android:textColor="#000000"/>
+
+        <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:singleLine="true"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:id="@+id/ET2"
+            android:background="@drawable/tv_border"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="9sp"
+            android:gravity="center"/>
+
+        <TextView android:text="kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:paddingTop="30sp"
+            android:textColor="#000000"/>
+    </LinearLayout>
     <Button
-        android:layout_width="150sp"
+        android:layout_width="145sp"
         android:layout_height="wrap_content"
         android:text="计算BMI"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textColor="#000000"
-        android:background="#ffff99"
+        android:background="@drawable/btn_selector"
         android:layout_gravity="center"
+        android:layout_marginTop="30sp"
         android:id="@+id/btn"/>
 
-    <TextView android:text="请输入正确的身高和体重！！"
-        android:layout_width="match_parent"
+
+    <TextView  android:id="@+id/result"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:text="请输入正确的身高和体重"
         android:paddingTop="30sp"
-        android:textColor="#000000"
+        android:textColor="#f0ffff"
+        android:textSize="25sp"
         android:gravity="center"/>
+
+    <TextView  android:id="@+id/suggest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#f0ffff"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:text="了解BMI"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+        <Button
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginTop="28sp"
+            android:background="@drawable/ic04"
+            android:id="@+id/in"
+            android:layout_marginRight="20sp"/>
+    </LinearLayout>
 
 </LinearLayout>

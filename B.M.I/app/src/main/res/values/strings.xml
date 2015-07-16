@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">B.M.I</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">关于“B.M.I”</string>
+    <string name="advice_light">体型“偏胖”：~O(∩_∩)O~多运动，合理饮食，你会更健康！</string>
+    <string name="advice_average">体型“正常”：~O(∩_∩)O~你的体重正常，继续保持！</string>
+    <string name="advice_heavy">体型“肥胖”：(～ o ～)~zZ！你该减肥了，不要吃太多了，多运动一下吧！</string>
+    <string name="advice_thin">体型“偏瘦”：(～ o ～)~zZ！你该多吃点，身体是革命的本钱哈！</string>
+    <string name="advice_verythin">体型“极度偏瘦”：(～ o ～)~zZ！你太瘦啦，要好好吃饭呀，太瘦可不健康哦！</string>
+    <string name="advice_tooheavy">体型“重度肥胖”：(～ o ～)~zZ！你的体重超标了，不要吃太多了，多运动一下吧！</string>
+    <string name="advice_veryheavy">体型“极度肥胖”：(～ o ～)~zZ！你的体重严重超标了，你需要进行科学的减肥！</string>
+</resources>
